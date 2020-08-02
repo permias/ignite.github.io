@@ -64,3 +64,13 @@
 {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+
+@mixin headline-font()
+{
+	font-family: 'BlatantBold', sans-serif
+}
+
+@mixin body-font()
+{
+	font-family: 'RoobertTRIAL-Regular', sans-serif
+}

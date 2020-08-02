@@ -34,8 +34,57 @@
 // }
 
 // variables.less
-$theme-primary: #F13F3F;
+$theme-primary: #ED1D25;
 $theme-dark: #222;
+
+@font-face {
+	font-family: 'RoobertTRIAL-Light';
+	src: url('RoobertTRIAL-Light.eot');
+	src: url('RoobertTRIAL-Light.eot?#iefix') format('embedded-opentype'),
+		url('RoobertTRIAL-Light.svg#RoobertTRIAL-Light') format('svg'),
+		url('RoobertTRIAL-Light.ttf') format('truetype'),
+		url('RoobertTRIAL-Light.woff') format('woff'),
+		url('RoobertTRIAL-Light.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RoobertTRIAL-Regular';
+	src: url('../fonts/RoobertTRIAL-Regular.eot');
+	src: url('../fonts/RoobertTRIAL-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/RoobertTRIAL-Regular.svg#RoobertTRIAL-Regular') format('svg'),
+		 url('../fonts/RoobertTRIAL-Regular.ttf') format('truetype'),
+		 url('../fonts/RoobertTRIAL-Regular.woff') format('woff'),
+		 url('../fonts/RoobertTRIAL-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+  
+@font-face {
+	font-family: 'BlatantRegular';
+	src: url('../fonts/BlatantRegular.eot');
+	src: url('../fonts/BlatantRegular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/BlatantRegular.svg#BlatantRegular') format('svg'),
+		 url('../fonts/BlatantRegular.ttf') format('truetype'),
+		 url('../fonts/BlatantRegular.woff') format('woff'),
+		 url('../fonts/BlatantRegular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BlatantBold';
+	src: url('../fonts/BlatantBold.eot');
+	src: url('../fonts/BlatantBold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/BlatantBold.svg#BlatantBold') format('svg'),
+		 url('../fonts/BlatantBold.ttf') format('truetype'),
+		 url('../fonts/BlatantBold.woff') format('woff'),
+		 url('../fonts/BlatantBold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+  
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
