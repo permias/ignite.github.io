@@ -23,7 +23,7 @@ a {
     color: $theme-primary;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: $accent-primary-variant
     }
 }
 
@@ -127,11 +127,10 @@ aside {
             }
         }
         &.affix {
-            background-color: white;
-            border-color: rgba($theme-dark, .5);
+            background-color: $accent-primary-variant;
             .navbar-header .navbar-brand {
-                color: $theme-primary;
-                font-size: 14px;
+                color: $accent-primary;
+                font-size: 1.25em;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
@@ -139,7 +138,7 @@ aside {
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: $accent-primary;
                 &:hover {
                     color: $theme-primary;
                 }
@@ -296,11 +295,11 @@ header {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include button-variant($accent-primary, $accent-primary-variant,  $accent-primary-variant, $theme-primary, $accent-primary);
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant($accent-primary, $theme-primary, $theme-primary, $accent-primary, $accent-primary-variant);
 }
 
 .btn {
@@ -318,8 +317,13 @@ header {
 
 // Contact
 #contact .fa {
+    // color: $theme-dark;
     color: $theme-dark;
     font-size: 4em;
+    &:hover,
+    &:focus {
+        color: white;
+    }
 }
 
 // Extras
