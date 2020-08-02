@@ -18,6 +18,10 @@ hr.light {
     border-color: white;
 }
 
+hr.accent {
+    border-color: $accent-primary-variant;
+}
+
 a {
     @include transition-all;
     color: $theme-primary;
@@ -44,6 +48,14 @@ p {
 
 .bg-primary {
     background-color: $theme-primary;
+}
+
+.bg-accent {
+    background-color: $accent-primary;
+}
+
+.bg-accent-variant {
+    background-color: $accent-primary-variant;
 }
 
 .bg-dark {
@@ -83,6 +95,16 @@ aside {
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
+        }
+        // brighten banner here
+        &#banner-img{
+            opacity: 0.75;
+        }
+        &#banner-img img:last-child {
+            display: none;
+        }
+        &#banner-img:hover, &#banner-img:focus {
+            opacity: 1;
         }
     }
     .nav {
@@ -130,10 +152,32 @@ aside {
             background-color: $accent-primary-variant;
             .navbar-header .navbar-brand {
                 color: $accent-primary;
+                border-color: rgba($accent-primary, .3);
                 font-size: 1.25em;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
+                }
+                
+                // change to red here
+                &#banner-img{
+                    opacity: 1;
+                }
+
+                &#banner-img > img:first-child {
+                    display: block;
+                }
+
+                &#banner-img > img:last-child {
+                    display: none;
+                }
+
+                &#banner-img:hover > img:first-child {
+                    display: none;
+                }
+
+                &#banner-img:hover > img:last-child {
+                    display: block;
                 }
             }
             .nav > li > a,
@@ -155,7 +199,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/monasbackground.png');
     text-align: center;
     color: white;
     .header-content {
@@ -283,6 +327,20 @@ header {
     }
 }
 
+// Lineup
+#lineup{
+    color: $theme-dark;
+}
+
+#lineup h2{
+    padding-top: 1em;
+}
+
+// Social
+#social h2 {
+    padding-top: 1em;
+}
+
 // Bootstrap Overrides
 .text-primary {
     color: $theme-primary;
@@ -299,7 +357,7 @@ header {
 }
 
 .btn-primary {
-    @include button-variant($accent-primary, $theme-primary, $theme-primary, $accent-primary, $accent-primary-variant);
+    @include button-variant($accent-primary, $theme-primary, $theme-primary, $theme-primary, $accent-primary);
 }
 
 .btn {

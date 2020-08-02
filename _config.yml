@@ -8,6 +8,7 @@ url: "" # the base hostname & protocol for your site
 instagram_username: "permias.nasional"
 facebook_username: "permias.nasional"
 linkedin_username: "permiasnasional"
+gmail_username: "permias.official@gmail.com"
 
 # Build settings
 markdown: kramdown
