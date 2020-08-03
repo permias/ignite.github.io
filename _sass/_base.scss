@@ -27,7 +27,7 @@ a {
     color: $theme-primary;
     &:hover,
     &:focus {
-        color: $accent-primary-variant
+        color: $accent-primary;
     }
 }
 
@@ -80,6 +80,9 @@ aside {
 }
 
 // Navigation
+.navbar-collapse img {
+    padding: 0.3em 1em 0 0;
+}
 
 .navbar-default {
     background-color: white;
@@ -192,7 +195,6 @@ aside {
 }
 
 // Homepage Header
-
 header {
     position: relative;
     width: 100%;
@@ -202,6 +204,11 @@ header {
     background-image: url('../img/monasbackground.png');
     text-align: center;
     color: white;
+
+    .logos{
+        padding: 0 1em;
+    }
+
     .header-content {
         position: relative;
         text-align: center;
@@ -346,6 +353,14 @@ header {
     color: $theme-primary;
 }
 
+.text-dark {
+    color: $theme-dark;
+}
+
+.text-accent {
+    color: $accent-primary;
+}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
@@ -375,7 +390,6 @@ header {
 
 // Contact
 #contact .fa {
-    // color: $theme-dark;
     color: $theme-dark;
     font-size: 4em;
     &:hover,
