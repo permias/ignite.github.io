@@ -11,5 +11,8 @@ linkedin_username: "permiasnasional"
 gmail_username: "permias.official@gmail.com"
 youtube_channel: "UCHjEGs027y3g--ZH5BCS7tw?view_as=subscriber"
 
+# Google Analytics
+google_analytics: UA-80706422-2
+
 # Build settings
 markdown: kramdown
