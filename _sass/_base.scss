@@ -86,7 +86,7 @@ aside {
 
 .navbar-default {
     background-color: white;
-    border-color: rgba($theme-dark, .5);
+    border: none;
     @include headline-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -202,6 +202,7 @@ header {
     @include background-cover;
     background-position: center;
     background-image: url('../img/monasbackground.png');
+    background-attachment: fixed;
     text-align: center;
     color: white;
 
